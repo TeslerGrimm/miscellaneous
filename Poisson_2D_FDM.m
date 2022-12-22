@@ -117,7 +117,7 @@ title({
      });
 hold on
 
-%check the value of potential in (ax,ay)
+%check the value of potential in a measuring point (ax,ay)
 ax=0;
 ay=0;
 h=Rx(2)-Rx(1);
@@ -144,7 +144,8 @@ axis equal
 xlabel('x');
 ylabel('y');
 hold on
-plot(Rx(Ox),ry(Oy),'ko','Linewidth',1,'markerfacecolor','g');%测量点.
+%draw the measuring point:
+plot(Rx(Ox),ry(Oy),'ko','Linewidth',1,'markerfacecolor','g');
 hold on
 %plot(RX(p),RY(p),'r.','Linewidth',1);%inner point
 plot(RX(B),RY(B),'k.','Linewidth',1);%boundary point
